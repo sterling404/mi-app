@@ -1,0 +1,41 @@
+
+.div1 {
+    position: relative;
+    border-radius: 5px;
+    height: 300px;
+    box-shadow: 5px #b4aeae;
+    background: #fff;
+}
+
+.ConBtnAction {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    bottom: 0;
+    height: 55px;
+    width: 100%;
+    border-radius: none;
+    border-radius: 0 0 5px 5px;
+    background: #fff;
+    /*background:rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);*/
+}
+.ConBtnAction button {
+    height: 40px;
+    width: 110px;
+    font-size: 18px;
+    background: #191d74;
+    color: #fff;
+    border-radius: 50px;
+    margin: 0 1rem;
+}
+.precio {
+    display: flex;
+    margin-left: 1rem;
+    gap: .2rem;
+}
+.precio p {
+    font-weight: 600;
+}

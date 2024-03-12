@@ -1,0 +1,36 @@
+.nav ul{
+    display: grid;
+    gap: 1rem;
+    right: auto;
+    text-decoration: none;
+    
+    display: flex;
+    flex-direction: row;
+}
+.nav ul  li a {
+    text-decoration: none;
+    color: #0B1520;
+    
+}
+.nav ul  li {
+    list-style: none;
+    
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+}
+.nav ul  li a {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+}
+
+
+.iconos {
+    font-size: 30px;
+}

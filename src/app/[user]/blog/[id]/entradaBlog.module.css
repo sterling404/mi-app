@@ -1,0 +1,101 @@
+.blog {
+    display: grid;
+    grid-template-columns: auto 400px;
+    margin-top: 40px;
+}
+.buscadorblog {
+    padding: 0.3rem;
+    border: none;
+}
+.article {
+    margin:10px 20px;
+    margin-left: 1rem;
+}
+.article h1 {
+    font-size:25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.conbuscador {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #fff;
+    width: fit-content;
+    padding:   0.5rem;
+    border-radius: 0.5rem;
+}
+
+.baralateral h6 {
+    font-size: 18px;
+    margin: 15px 0;
+    font-weight: 600;
+}
+.baralateral h5 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contenido{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5rem;
+    
+}
+.comentario{
+    grid-column: 1/-1;
+}
+.linea div {
+    height: 15px;
+    width: 15px;
+    background: #595757;
+    border-radius: 50%;
+}
+.linea {
+    width: 3px;
+    background: #595757cc;
+    height: auto;
+    display: grid;
+    justify-content: center;
+    margin:0px 0px  0px 20px;
+}
+@media (max-width:1000px) {
+    .blog {
+        grid-template-columns: auto;
+    }
+    .article {
+        margin-left: 0;
+    }
+}
+
+
+.perfil {
+    height: 40px;
+    width: 40px;
+    background: #595757;
+    border-radius: 20px;
+}
+.usuario{
+    display: flex;
+    gap: 5px;
+
+}
+.usuario p{
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+
+.texto{
+    margin: -15px  0px 0px 45px ;
+    background: #DDE1E9;
+}
+
+.texto {
+    border: none;
+  }
+  
+.texto:focus {
+    outline: none;
+  }

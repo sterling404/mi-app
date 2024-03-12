@@ -1,0 +1,41 @@
+.pageindex {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+    margin-top: 20px;
+    height: auto;
+    gap: 1rem;
+    padding-bottom: 40px;
+    
+}
+
+
+
+@media (max-width: 400px) {
+    .pageindex {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 2fr))
+    }
+  }
+
+
+  /*
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    } 
+}
+
+.pageindex div {
+    view-timeline-name: --divv;
+    view-timeline-axis: block;
+
+    animation-timeline: --divv;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}*/

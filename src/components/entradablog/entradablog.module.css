@@ -1,0 +1,77 @@
+.entrada {
+    position: relative;
+    height: 400px;
+    min-width: 350;
+   
+}
+.conTarjeta{
+    position: relative;
+    border-radius: 1rem;
+    height:355px;
+    background: #fff;
+}
+
+.entrar {
+    display: flex;
+    justify-content: flex-end;
+    
+    height: 205px;
+    padding: 1rem;
+    border-radius: 1rem 1rem 0 0;
+   
+}
+
+.conten {
+    position: relative;
+}
+
+.resumenCon{
+    position: relative;
+    bottom: 0;
+    height: 150px;
+    border-radius:0 0 1rem 1rem;
+}
+
+.resumen h2 {
+    font-size: 20px;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 1; /* Mostrar solo 3 líneas */
+    -webkit-line-clamp: 1;
+    letter-spacing: .007em;
+ }
+
+.resumen p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 3; /* Mostrar solo 3 líneas */
+  -webkit-line-clamp: 3;
+  letter-spacing: .010em;
+  white-space: normal;
+}
+.resumen {
+    margin:0 1rem;
+}
+.btnentrar {
+    font-size: 40px;
+}
+
+.reaciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin:0.5rem 1rem;
+}
+.btnreacion{
+    font-size: 25px;
+    cursor: pointer;
+}
+.datareaccion{
+    position: absolute;
+    bottom: 1rem;
+    margin: 0 0.5rem;
+}

@@ -1,0 +1,192 @@
+.Navbar {
+    transition: transform 0.5s ease-in-out;
+    position: fixed; /* o 'absolute' si no desea que la barra de navegación sea fija */
+    top: 0;
+    width: 80%;
+    display: flex;
+    justify-content: space-between; /* Esto separa el logo y .menuContainer */
+    align-items: center;
+    height: 80px;
+    z-index: 1000;
+    background: #dde1e9d9;
+}
+@media (max-width: 768px) {
+    .Navbar {
+        width: 95%; /* Aumenta el ancho en pantallas pequeñas */
+    }
+}
+
+.hide {
+    top: -100%; /* Esto desplaza la barra de navegación fuera de la pantalla */
+  }
+
+.menuContainer {
+    position: relative; /* Establece el contexto de posicionamiento para .opciones */
+    flex-grow: 1; /* Permite que el contenedor crezca y utilice cualquier espacio disponible */
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 25px;
+}
+.botones {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* margin-left: auto; No es necesario si .menuContainer usa flex-grow */
+    justify-content: flex-end
+}
+.elemento-no-seleccionable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+.btnsubmenu{
+    cursor: pointer;
+    z-index: 1;
+    width: 2rem;
+    height: 2rem;
+}
+
+.opciones {
+    display: none; /* O cambiar a 'block' o 'flex' según el estado de visibilidad */
+    position: absolute;
+    top: 100%; /* Asegura que se muestre justo debajo del botón del menú */
+    right: 0; /* Alinea al extremo derecho del contenedor relativo */
+    background-color: #fffdfd; /* o el color de fondo que prefiera */
+    width: auto;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Opcional, para un efecto de elevación */
+    z-index: 1000;
+    margin-top: 1.5rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    min-height: 300px;
+    min-width: 300px;
+    border-radius: 1rem;
+}
+.opciones ul {
+    margin-top: 1.5rem;
+}
+.opciones li {
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.opciones ul .span {
+    background: #752020;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 1rem;
+}
+.opciones ul li .enlace{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+.opciones ul li .icoenlace{
+    font-size: 20px;
+    color: #414141;
+}
+
+.opciones.show {
+    display: flex;
+    justify-content: center;
+}
+.btncrearcuenta{
+    padding: 0.5rem 1rem;
+    background: #222222;
+    border-radius:20px ;
+    border: none;
+    color: #f1e9e9;
+    font-size: 18px;
+    font-weight: 600;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-shadow: 0 8px 16px rgba(212, 208, 208, 0.2);
+}
+
+.btniniciarsecion {
+    padding: 0.5rem 1rem;
+    background: #fff;
+    border-radius:20px ;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-shadow: 0 8px 16px rgba(212, 208, 208, 0.2);
+}
+
+@media (max-width:400px) {
+    .btncrearcuenta, .btniniciarsecion{
+        display: none;
+    }
+    .opciones {
+        margin-top: 1.8rem;
+        width: 100%;
+        height: 100%;
+    }
+}
+/* Asegúrese de que .Navbar tenga suficiente espacio a la derecha para que .opciones pueda caber */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.logo h1 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.opciones{
+    position: absolute;
+    display: flex;
+    
+    justify-content: flex-end;
+    z-index: 1;
+    right: 0;
+    margin-left: auto;
+    width: 100%;
+}
+
+.Navbar {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+.Navbar ul {
+    position: relative;
+   display: none;
+}
+.botones {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto; /* Esto empuja el contenedor .botones hacia la derecha */
+
